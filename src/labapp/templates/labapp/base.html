@@ -1,0 +1,43 @@
+{% load static %} {# 加载项目本地静态资源。 #}
+<!doctype html> <!-- 使用标准HTML文档模式。 -->
+<html lang="zh-CN"> <!-- 声明中文页面。 -->
+<head> <!-- 页面元数据与资源引用。 -->
+<meta charset="utf-8"> <!-- 保持中文文本编码一致。 -->
+<meta name="viewport" content="width=device-width,initial-scale=1"> <!-- 适配手机和电脑。 -->
+<title>{{ title|default:'实验室预约' }} · 实验室预约管理系统</title> <!-- 提供可读页面标题。 -->
+<link rel="stylesheet" href="{% static 'labapp/style.css' %}"> <!-- 读取随项目交付的样式。 -->
+<script src="{% static 'labapp/app.js' %}" defer></script> <!-- 等待页面就绪后增强交互。 -->
+</head> <!-- 元数据分区结束。 -->
+<body class="{% if not request.user.is_authenticated %}auth-page{% endif %}"> <!-- 登录页与工作区使用对应布局。 -->
+{% if request.user.is_authenticated %} {# 已登录用户展示工作区导航。 #}
+<aside class="sidebar"> <!-- 持续可见的主要功能入口。 -->
+<a class="brand" href="{% url 'labs' %}"><span class="brand-mark">L</span><span>实验室预约<small>LAB RESERVATION</small></span></a> <!-- 品牌与查询入口。 -->
+<div class="nav-caption">工作空间</div> <!-- 说明导航分组。 -->
+<nav aria-label="主要功能"> <!-- 为辅助工具提供导航语义。 -->
+<a class="{% if section == 'labs' %}selected{% endif %}" href="{% url 'labs' %}">◈ <span>实验室查询</span></a> <!-- 查看资源及占用。 -->
+<a class="{% if section == 'bookings' %}selected{% endif %}" href="{% url 'bookings' %}">▤ <span>{% if request.user.is_staff %}预约记录{% else %}我的预约{% endif %}</span></a> <!-- 按角色查看记录。 -->
+<a class="{% if section == 'statistics' %}selected{% endif %}" href="{% url 'statistics' %}">▥ <span>预约统计</span></a> <!-- 查询计划预约统计。 -->
+{% if request.user.is_staff %} {# 管理入口只在管理员页面展示，服务端仍单独校验。 #}
+<div class="nav-caption">管理工具</div> <!-- 管理功能分区。 -->
+<a href="{% url 'bookings' %}?status=PENDING">✓ <span>预约审核</span></a> <!-- 默认筛选待审记录。 -->
+<a class="{% if section == 'manage_labs' %}selected{% endif %}" href="{% url 'manage_labs' %}">⊞ <span>实验室管理</span></a> <!-- 维护资源。 -->
+<a class="{% if section == 'accounts' %}selected{% endif %}" href="{% url 'accounts' %}">♙ <span>账号管理</span></a> <!-- 维护账号与角色。 -->
+<a class="{% if section == 'audit' %}selected{% endif %}" href="{% url 'audit' %}">↺ <span>操作记录</span></a> <!-- 查看关键业务证据。 -->
+{% endif %} {# 管理入口分区结束。 #}
+</nav> <!-- 导航列表结束。 -->
+<div class="sidebar-note"><span class="status-dot"></span> 有序预约，让实验顺利开始</div> <!-- 展示面向使用者的说明。 -->
+</aside> <!-- 侧边栏结束。 -->
+{% endif %} {# 登录前不展示业务入口。 #}
+<div class="workspace"> <!-- 承载页面主内容。 -->
+{% if request.user.is_authenticated %} {# 已登录页面展示身份与退出。 #}
+<header class="topbar"><span>实验室预约管理系统</span><div class="identity"><span class="avatar">{{ request.user.username|first|upper }}</span><span>{{ request.user.first_name|default:request.user.username }}<small>{% if request.user.is_staff %}管理员{% else %}预约申请人{% endif %}</small></span><form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="text-button" type="submit">退出</button></form></div></header> <!-- 退出采用带CSRF令牌的POST。 -->
+{% endif %} {# 顶栏分区结束。 #}
+<main class="content"> <!-- 每页主要内容区域。 -->
+{% for message in messages %} {# 显示业务执行后的真实结果。 #}
+<div class="alert {{ message.tags }}" role="status">{{ message }}</div> <!-- 自动转义提示文字。 -->
+{% endfor %} {# 提示列表结束。 #}
+{% block content %}{% endblock %} {# 子页面在这里提供具体内容。 #}
+</main> <!-- 主内容结束。 -->
+</div> <!-- 工作区结束。 -->
+</body> <!-- 页面内容结束。 -->
+</html> <!-- HTML文档结束。 -->

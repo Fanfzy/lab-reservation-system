@@ -1,0 +1,5 @@
+{% extends 'labapp/base.html' %} {# 复用管理员工作区。 #}
+{% block content %} {# 管理资源内容。 #}
+<div class="page-heading"><div><div class="eyebrow">LAB MANAGEMENT</div><h1>实验室管理</h1><p>维护资源信息与开放时间，保留历史预约的关联。</p></div><a class="button primary" href="{% url 'new_lab' %}">＋ 新增实验室</a></div> <!-- 新建资源入口。 -->
+<section class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>编码 / 名称</th><th>位置</th><th>容量</th><th>开放时间</th><th>状态</th><th>操作</th></tr></thead><tbody>{% for lab in labs %}<tr><td><strong>{{ lab.name }}</strong><small>{{ lab.code }}</small></td><td>{{ lab.location }}</td><td>{{ lab.capacity }} 人</td><td>{{ lab.open_time|time:'H:i' }}—{{ lab.close_time|time:'H:i' }}</td><td><span class="badge {% if lab.is_active %}APPROVED{% else %}CANCELLED{% endif %}">{% if lab.is_active %}可预约{% else %}已停用{% endif %}</span></td><td><a class="table-link" href="{% url 'edit_lab' lab.pk %}">修改 →</a></td></tr>{% empty %}<tr><td colspan="6" class="empty-state">尚未创建实验室。</td></tr>{% endfor %}</tbody></table></div></section> <!-- 修改由受保护的业务服务处理。 -->
+{% endblock %} {# 管理页面结束。 #}

@@ -1,0 +1,7 @@
+{% extends 'labapp/base.html' %} {# 复用本地资源和文档结构。 #}
+{% block content %} {# 登录页主区域。 #}
+<div class="login-layout"> <!-- 说明区与登录区并列。 -->
+<section class="login-story"><div class="eyebrow">LAB RESERVATION</div><h1>把时间留给实验。</h1><p>查询实验室、选择合适时段、追踪审核结果。<br>从一次清晰的预约开始。</p><div class="story-visual"><div class="visual-grid"></div><span class="visual-orbit"></span><div class="visual-card"><span>预约流程</span><strong>查询 → 申请 → 审核</strong><small>让每一次实验都有安排</small></div></div><div class="story-footer">实验室预约管理系统 · 课程设计</div></section> <!-- 介绍实际使用流程。 -->
+<section class="login-panel"><div class="eyebrow">WELCOME BACK</div><h2>登录你的工作空间</h2><p class="muted">使用分配给你的账号继续。</p><form method="post" class="stack">{% csrf_token %}{% include 'labapp/_fields.html' %}{% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}<button class="button primary full" type="submit">登录</button></form><p class="login-help">账号或权限问题，请联系实验室管理员。</p></section> <!-- 框架认证验证账号状态和密码。 -->
+</div> <!-- 登录布局结束。 -->
+{% endblock %} {# 登录页结束。 #}

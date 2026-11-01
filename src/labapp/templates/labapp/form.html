@@ -1,0 +1,5 @@
+{% extends 'labapp/base.html' %} {# 编辑页面复用布局。 #}
+{% block content %} {# 统一编辑主内容。 #}
+<div class="page-heading"><div><div class="eyebrow">{% if booking_form %}NEW RESERVATION{% else %}MANAGE{% endif %}</div><h1>{{ title }}</h1><p>{{ subtitle|default:'填写信息后保存。带星号的字段为必填项。' }}</p></div></div> <!-- 提供当前操作说明。 -->
+<section class="panel form-panel"><form method="post" class="stack" {% if booking_form %}data-booking{% endif %}>{% csrf_token %}{% include 'labapp/_fields.html' %}{% if lab %}<div class="helper">开放时间 {{ lab.open_time|time:'H:i' }}—{{ lab.close_time|time:'H:i' }}；整间实验室预约，申请后即占用时段。</div>{% endif %}<div class="actions"><button class="button primary" type="submit">{{ submit_label }}</button><a class="button secondary" href="{% if section == 'accounts' %}{% url 'accounts' %}{% elif section == 'manage_labs' %}{% url 'manage_labs' %}{% else %}{% url 'labs' %}{% endif %}">返回</a></div></form></section> <!-- 校验失败时保留输入和错误。 -->
+{% endblock %} {# 编辑页面结束。 #}

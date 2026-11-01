@@ -1,0 +1,9 @@
+{% extends 'labapp/base.html' %} {# 复用查询工作区。 #}
+{% block content %} {# 统计展示区域。 #}
+<div class="page-heading"><div><div class="eyebrow">RESERVATION INSIGHTS</div><h1>预约统计</h1><p>{% if request.user.is_staff %}查看系统预约概况。{% else %}查看本人的预约概况。{% endif %}按预约开始日期筛选，展示当前状态。</p></div></div> <!-- 明确统计归属与日期口径。 -->
+<section class="panel filter-panel"><form method="get" class="inline-form">{% include 'labapp/_fields.html' %}<button class="button primary" type="submit">查看统计</button></form></section> <!-- 日期范围由服务端验证。 -->
+{% if summary %} {# 只展示有效窗口对应的结果。 #}
+<div class="metrics"><section class="metric"><span>预约申请总数</span><strong>{{ summary.total }}<small> 笔</small></strong><p>所选日期内的预约安排</p></section><section class="metric accent"><span>获批预约时长</span><strong>{{ summary.approved_hours }}<small> 小时</small></strong><p>计划占用时间，非实际使用时长</p></section></div> <!-- 数量与时长分开展示。 -->
+<div class="detail-grid"><section class="panel"><h2>预约状态分布</h2>{% for state in summary.states %}<div class="chart-row"><div><span class="badge {{ state.key }}">{{ state.label }}</span><strong>{{ state.count }} 笔</strong></div><div class="bar-track"><div class="bar-fill {{ state.key }}" style="width:{{ state.percent }}%"></div></div></div>{% endfor %}</section><section class="panel"><h2>实验室申请数量</h2><div class="rank-list">{% for item in summary.by_lab %}<div class="rank-row"><span class="rank-number">{{ forloop.counter|stringformat:'02d' }}</span><span>{{ item.lab__name }}<small>{{ item.lab__code }}</small></span><strong>{{ item.total }} 笔</strong></div>{% empty %}<div class="empty-state compact">所选日期内暂无申请。</div>{% endfor %}</div></section></div> <!-- 图形以本地HTML/CSS生成，无外部图表依赖。 -->
+{% endif %} {# 统计展示结束。 #}
+{% endblock %} {# 统计页结束。 #}

@@ -1,0 +1,11 @@
+{% extends 'labapp/base.html' %} {# 复用工作区结构。 #}
+{% block content %} {# 资源查询主区域。 #}
+<div class="page-heading"><div><div class="eyebrow">EXPLORE LABS</div><h1>找到适合你的实验室</h1><p>先查看资源和占用时段，再安排你的实验。</p></div><div class="count-pill"><strong>{{ available_count }}</strong> 间可预约</div></div> <!-- 展示资源概况。 -->
+<section class="panel filter-panel"><form method="get" class="filter-grid">{% include 'labapp/_fields.html' %}<button class="button primary" type="submit">查询实验室</button><a class="button secondary" href="{% url 'labs' %}">重置</a></form></section> <!-- 使用GET保留可分享的筛选条件。 -->
+<div class="section-line"><h2>实验室资源</h2><span>{{ lab_count }} 个查询结果</span></div> <!-- 展示实际结果数量。 -->
+<div class="lab-grid"> <!-- 资源卡片布局。 -->
+{% for lab in labs %} {# 遍历有序资源列表。 #}
+<article class="lab-card"><div class="card-top"><span class="lab-symbol">◈</span><span class="badge {% if lab.is_active %}APPROVED{% else %}CANCELLED{% endif %}">{% if lab.is_active %}可预约{% else %}已停用{% endif %}</span></div><div class="resource-code">{{ lab.code }}</div><h2>{{ lab.name }}</h2><p class="muted">{{ lab.location }}</p><div class="lab-facts"><span>容量 <strong>{{ lab.capacity }} 人</strong></span><span>开放 <strong>{{ lab.open_time|time:'H:i' }}—{{ lab.close_time|time:'H:i' }}</strong></span></div><p class="equipment">{{ lab.equipment|default:'设备信息待补充'|truncatechars:75 }}</p><a class="button secondary full" href="{% url 'lab_detail' lab.pk %}">查看详情与时段 <span>→</span></a></article> <!-- 展示资源信息并引导查看占用。 -->
+{% empty %}<div class="empty-state"><strong>暂时没有符合条件的实验室</strong><p>调整关键词、容量或资源状态后再试。</p></div>{% endfor %} {# 提供清晰空状态。 #}
+</div> <!-- 卡片区域结束。 -->
+{% endblock %} {# 资源查询页结束。 #}

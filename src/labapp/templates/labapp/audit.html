@@ -1,0 +1,5 @@
+{% extends 'labapp/base.html' %} {# 复用管理工作区。 #}
+{% block content %} {# 关键操作记录。 #}
+<div class="page-heading"><div><div class="eyebrow">ACTIVITY LOG</div><h1>操作记录</h1><p>查看申请、审核、取消和管理操作的时间与操作者。</p></div></div> <!-- 说明记录用途。 -->
+<section class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>时间</th><th>操作者</th><th>动作</th><th>对象</th><th>说明</th></tr></thead><tbody>{% for event in page %}<tr><td>{{ event.created_at|date:'Y-m-d H:i:s' }}</td><td>{{ event.actor.first_name|default:event.actor.username }}</td><td>{{ event.action_label }}</td><td>{{ event.subject }}</td><td>{{ event.detail }}</td></tr>{% empty %}<tr><td colspan="5" class="empty-state">暂无操作记录。</td></tr>{% endfor %}</tbody></table></div>{% include 'labapp/_pagination.html' %}</section> <!-- 自动转义操作说明。 -->
+{% endblock %} {# 记录页结束。 #}

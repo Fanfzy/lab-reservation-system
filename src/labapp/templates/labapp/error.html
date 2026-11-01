@@ -1,0 +1,2 @@
+{% extends 'labapp/base.html' %} {# 保持错误页面与应用外观一致。 #}
+{% block content %}<section class="panel empty-state"><div class="eyebrow">{{ title }}</div><h1>{{ title }}</h1><p>{{ error }}</p><a class="button primary" href="{% url 'labs' %}">返回实验室查询</a></section>{% endblock %} {# 显示具体错误和恢复入口。 #}

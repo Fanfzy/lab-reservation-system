@@ -1,0 +1,5 @@
+{% extends 'labapp/base.html' %} {# 复用管理员布局。 #}
+{% block content %} {# 账号管理内容。 #}
+<div class="page-heading"><div><div class="eyebrow">ACCOUNTS</div><h1>账号管理</h1><p>分配申请人与管理员角色，停用账号时保留历史。</p></div><a class="button primary" href="{% url 'new_account' %}">＋ 新增账号</a></div> <!-- 账号创建入口。 -->
+<section class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>登录账号</th><th>显示姓名</th><th>角色</th><th>状态</th><th>操作</th></tr></thead><tbody>{% for account in accounts %}<tr><td><strong>{{ account.username }}</strong></td><td>{{ account.first_name|default:'未填写' }}</td><td>{% if account.is_staff %}管理员{% else %}预约申请人{% endif %}</td><td><span class="badge {% if account.is_active %}APPROVED{% else %}CANCELLED{% endif %}">{% if account.is_active %}启用{% else %}停用{% endif %}</span></td><td><a class="table-link" href="{% url 'edit_account' account.pk %}">修改 →</a></td></tr>{% endfor %}</tbody></table></div></section> <!-- 密码及散列不进入页面。 -->
+{% endblock %} {# 账号管理结束。 #}

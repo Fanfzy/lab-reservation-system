@@ -1,0 +1,5 @@
+{% for hidden in form.hidden_fields %}{{ hidden }}{% endfor %} {# 原样携带受校验的隐藏提交标识。 #}
+{% if form.non_field_errors %}<div class="alert error">{{ form.non_field_errors }}</div>{% endif %} {# 展示跨字段与业务规则错误。 #}
+{% for field in form.visible_fields %} {# 为每个可见字段生成标签和校验说明。 #}
+<div class="field"><label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}<span class="required"> *</span>{% endif %}</label>{{ field }}{% if field.help_text %}<small>{{ field.help_text }}</small>{% endif %}{% if field.errors %}<div class="field-error">{{ field.errors }}</div>{% endif %}</div> <!-- 将输入和错误信息与标签关联。 -->
+{% endfor %} {# 表单字段分区结束。 #}

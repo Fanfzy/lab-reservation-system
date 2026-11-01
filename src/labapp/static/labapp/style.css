@@ -1,0 +1,153 @@
+/* 逻辑分区：主题、基础元素与页面结构。 */
+:root{--navy:#142d32;--navy-light:#244349;--ink:#193339;--muted:#6d7e80;--paper:#f4f6f3;--border:#e1e7e1;--green:#21644c;--orange:#dc774c;--white:#fff;--shadow:0 8px 30px #122b3210} /* 集中定义可维护的颜色与间距基调。 */
+*{box-sizing:border-box} /* 使用可预测的尺寸计算方式。 */
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 'Segoe UI','Microsoft YaHei',sans-serif} /* 使用已有系统字体显示中文。 */
+a{color:inherit;text-decoration:none} /* 链接由具体组件提供可识别外观。 */
+button,input,select,textarea{font:inherit} /* 输入控件与正文保持一致。 */
+button,a,input,select,textarea{outline-offset:4px} /* 保留键盘焦点提示。 */
+h1,h2,p{margin:0} /* 由组件控制间距。 */
+h1{font-size:32px;line-height:1.3;letter-spacing:-.6px} /* 强调每页主要任务。 */
+h2{font-size:19px;line-height:1.4;margin-bottom:18px} /* 定义卡片和分区标题。 */
+.muted{color:var(--muted)} /* 次级说明使用较轻颜色。 */
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--green);margin-bottom:12px} /* 小标识形成信息层次。 */
+.sidebar{position:fixed;inset:0 auto 0 0;width:235px;background:var(--navy);color:#e3ede9;padding:32px 18px;display:flex;flex-direction:column;z-index:2} /* 桌面固定功能导航。 */
+.brand{display:flex;gap:13px;align-items:center;padding:0 12px 35px;font-size:18px;font-weight:700} /* 展示品牌与首页入口。 */
+.brand-mark{width:37px;height:42px;background:#dcebba;border-radius:8px;color:var(--navy);display:grid;place-items:center;font-size:26px;font-weight:800} /* 使用文字生成本地标志。 */
+.brand small{display:block;font-size:8px;font-weight:500;letter-spacing:2px;opacity:.65} /* 次级英文标识。 */
+.nav-caption{font-size:11px;color:#92aaa9;margin:18px 16px 9px;letter-spacing:1px} /* 区分查询和管理工具。 */
+nav a{display:flex;align-items:center;gap:13px;padding:12px 16px;margin:4px 0;border-radius:8px;font-size:16px;color:#c4d4d1} /* 提供清晰的导航点击区域。 */
+nav a.selected,nav a:hover{background:var(--navy-light);color:#e3f0b8} /* 高亮当前功能和悬停状态。 */
+nav a span{font-size:14px} /* 统一导航文字尺寸。 */
+.sidebar-note{margin-top:auto;border-top:1px solid #ffffff15;padding:24px 12px 0;font-size:10px;color:#aac0b9;line-height:1.8} /* 侧栏底部使用说明。 */
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#dcebba;margin-right:6px} /* 装饰性状态点。 */
+.workspace{margin-left:235px;min-height:100vh} /* 给固定侧栏预留位置。 */
+.topbar{height:88px;padding:0 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:#ffffffa0;font-size:13px;color:var(--muted)} /* 展示系统名称和身份。 */
+.identity{display:flex;align-items:center;gap:12px;color:var(--ink);font-size:13px} /* 将姓名、角色和退出并列。 */
+.identity small{display:block;font-size:10px;color:var(--muted)} /* 次级角色说明。 */
+.avatar{width:36px;height:36px;display:grid;place-items:center;background:#e5ece0;border-radius:50%;font-size:14px;font-weight:700} /* 无外部图片的身份头像。 */
+.text-button{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:10px;margin-left:6px} /* 将退出保持为真实按钮。 */
+.content{padding:38px 40px 60px;max-width:1600px;margin:0 auto} /* 限制宽屏阅读宽度。 */
+.page-heading{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:28px} /* 标题与主要动作并列。 */
+.page-heading p{color:var(--muted);font-size:13px;margin-top:10px} /* 解释当前页用途。 */
+.count-pill{padding:12px 17px;border:1px solid var(--border);border-radius:9px;white-space:nowrap;color:var(--muted);font-size:12px;background:white} /* 展示资源或记录数量。 */
+.count-pill strong{font-size:20px;color:var(--ink);margin:0 4px} /* 突出数量。 */
+
+/* 逻辑分区：输入、按钮、提示与公共卡片。 */
+.panel{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:27px;box-shadow:var(--shadow);margin-bottom:24px} /* 统一内容容器。 */
+.filter-panel{padding:22px 26px} /* 筛选区使用紧凑间距。 */
+.field{display:flex;flex-direction:column;gap:7px;min-width:0} /* 标签与输入垂直排列。 */
+.field label{font-size:12px;font-weight:600;color:var(--ink)} /* 明确关联字段名称。 */
+.field small{font-size:11px;color:var(--muted)} /* 展示输入说明。 */
+.field-input{width:100%;border:1px solid #d9e1da;border-radius:7px;background:#fcfdfb;padding:10px 12px;color:var(--ink);min-height:44px} /* 提供足够大的操作控件。 */
+.field-input:focus{border-color:var(--green);box-shadow:0 0 0 3px #21644c10} /* 标明正在编辑字段。 */
+textarea.field-input{resize:vertical} /* 允许扩大多行说明。 */
+.check-input{width:20px;height:20px;accent-color:var(--green)} /* 保持复选框真实可用。 */
+.required,.field-error{color:#b64838;font-size:12px} /* 强调必填和错误原因。 */
+.errorlist{padding-left:20px;margin:4px 0;font-size:12px} /* 紧凑展示框架错误列表。 */
+.filter-grid{display:flex;align-items:end;gap:15px;flex-wrap:wrap} /* 多条件筛选可自动换行。 */
+.filter-grid .field{flex:1;min-width:150px} /* 输入框按空间展开。 */
+.inline-form{display:flex;align-items:end;gap:14px;flex-wrap:wrap;margin-bottom:18px} /* 日期范围横向排列。 */
+.inline-form .field{min-width:150px;flex:1} /* 控件具有合理最小宽度。 */
+.stack{display:grid;gap:20px} /* 编辑表单保持稳定纵向节奏。 */
+.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;border:1px solid transparent;border-radius:7px;min-height:44px;padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .15s} /* 统一链接和按钮外观。 */
+.button.primary{background:var(--green);color:white} /* 主要动作突出显示。 */
+.button.primary:hover{background:#194e3c} /* 悬停反馈。 */
+.button.secondary{background:#f5f8f1;border-color:#dfe6d7;color:#315b45} /* 次级查询与返回动作。 */
+.button.secondary:hover{background:#e9f0e1} /* 次级悬停反馈。 */
+.button.danger{background:#fff1ea;border-color:#f3c9b7;color:#ac4a2a} /* 取消和拒绝动作有明确区分。 */
+.button:disabled{opacity:.5;cursor:not-allowed} /* 表示当前动作不可执行。 */
+.button.full{width:100%} /* 卡片和登录主要按钮填满宽度。 */
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px} /* 操作按钮并列且可换行。 */
+.alert{border:1px solid #d4e8db;background:#edf7ef;color:#24573c;border-radius:8px;padding:13px 18px;margin-bottom:20px;font-size:13px} /* 明确显示成功消息。 */
+.alert.error{border-color:#f0c9c0;background:#fff1ed;color:#9e3e31} /* 错误消息与成功区分。 */
+.helper{background:#f4f7ee;border-left:3px solid #a4b883;border-radius:3px;padding:14px;color:#617052;font-size:12px;margin:18px 0} /* 说明边界和业务规则。 */
+.empty-state{text-align:center;padding:45px 24px;color:var(--muted);width:100%;grid-column:1/-1} /* 列表为空时说明结果。 */
+.empty-state strong{display:block;color:var(--ink);font-size:16px;margin-bottom:8px} /* 空状态主提示。 */
+.empty-state.compact{padding:30px 14px} /* 小区域空状态。 */
+
+/* 逻辑分区：资源、记录、详情与统计。 */
+.section-line{display:flex;align-items:center;justify-content:space-between;margin:32px 0 16px} /* 资源区标题与数量并列。 */
+.section-line h2{margin:0} /* 取消该行标题下间距。 */
+.section-line span{font-size:12px;color:var(--muted)} /* 次级数量提示。 */
+.lab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px} /* 宽屏三列资源卡片。 */
+.lab-card{background:white;border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:var(--shadow)} /* 独立资源卡片。 */
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px} /* 图标和可用状态并列。 */
+.lab-symbol{display:grid;place-items:center;width:46px;height:46px;background:#f0f4e8;border:1px solid #e0e8d5;border-radius:11px;color:var(--green);font-size:28px} /* 本地字符构成资源标志。 */
+.resource-code{font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-bottom:6px} /* 次级资源编码。 */
+.lab-card h2{font-size:18px;margin-bottom:7px} /* 资源名称作为主信息。 */
+.lab-card .muted{font-size:12px} /* 位置为次级说明。 */
+.lab-facts{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:17px 0;margin:20px 0;font-size:10px;color:var(--muted)} /* 展示容量与开放时间。 */
+.lab-facts strong{display:block;color:var(--ink);font-size:12px;font-weight:600;margin-top:3px} /* 突出具体资源条件。 */
+.equipment{font-size:12px;color:var(--muted);min-height:43px;margin-bottom:20px} /* 设备介绍预留稳定高度。 */
+.badge{display:inline-block;border-radius:5px;padding:4px 8px;font-size:10px;white-space:nowrap;background:#eff1ee;color:#61706a} /* 状态徽章基础样式。 */
+.badge.APPROVED{background:#edf6e8;color:#41713b} /* 已批准和可预约状态。 */
+.badge.PENDING{background:#fff1db;color:#9a712b} /* 待审核状态。 */
+.badge.REJECTED{background:#ffede7;color:#ae503e} /* 已拒绝状态。 */
+.badge.CANCELLED{background:#edf0f0;color:#6c7d7e} /* 已取消或停用状态。 */
+.badge.large{font-size:13px;padding:9px 16px} /* 详情页强化当前状态。 */
+.table-panel{padding:0;overflow:hidden} /* 表格占满容器。 */
+.table-scroll{overflow-x:auto} /* 小屏允许表格横向滚动。 */
+table{border-collapse:collapse;width:100%;font-size:12px} /* 提供稳定的列布局。 */
+th{text-align:left;padding:17px 20px;background:#f8faf5;color:var(--muted);font-size:11px;font-weight:600;white-space:nowrap} /* 表头与数据区分。 */
+td{padding:20px;border-top:1px solid var(--border);vertical-align:middle} /* 数据行保持适当点击和阅读空间。 */
+td small,.rank-row small{display:block;font-size:10px;color:var(--muted);margin-top:3px} /* 次级编码和时间。 */
+.table-link{color:var(--green);font-weight:600;white-space:nowrap} /* 明确详情操作链接。 */
+.pagination{display:flex;justify-content:center;gap:30px;padding:20px;font-size:12px;border-top:1px solid var(--border)} /* 分页居中并保留导航。 */
+.back-link{display:block;font-size:12px;color:var(--green);margin-bottom:24px} /* 详情页返回入口。 */
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start} /* 详情和统计双列展示。 */
+.detail-grid .panel{margin-bottom:0} /* 避免嵌套重复间距。 */
+.info-list{display:grid;grid-template-columns:100px 1fr;gap:19px 18px;font-size:13px;margin:0} /* 标签与值清晰对应。 */
+.info-list dt{color:var(--muted)} /* 次级字段名。 */
+.info-list dd{margin:0;overflow-wrap:anywhere} /* 长文字能够换行。 */
+.time-list{margin:20px 0} /* 占用区间独立成组。 */
+.time-row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--border);padding:15px 0;font-size:14px} /* 时段和状态并列。 */
+.form-panel{max-width:720px} /* 编辑页保持可阅读宽度。 */
+.review-panel{margin-top:24px;max-width:900px} /* 审核区与申请详情分开。 */
+.review-panel .muted{font-size:12px;margin-bottom:18px} /* 审核说明文字。 */
+.progress-step{display:flex;gap:14px;margin:23px 0;font-size:13px} /* 将状态历史按时间逐条展示。 */
+.progress-step p{color:var(--muted);font-size:12px;margin-top:4px} /* 展示时间、操作者和理由。 */
+.step-dot{width:10px;height:10px;flex:0 0 10px;background:var(--green);border:3px solid #dcebdd;border-radius:50%;margin-top:6px} /* 操作节点标识。 */
+.muted-dot{background:#899792;border-color:#ebefed} /* 取消节点使用次级色。 */
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px} /* 统计指标并列。 */
+.metric{background:white;border:1px solid var(--border);border-radius:12px;padding:25px} /* 数值指标卡片。 */
+.metric>span{font-size:12px;color:var(--muted)} /* 指标名称。 */
+.metric>strong{display:block;font-size:42px;line-height:1.5;font-weight:600} /* 突出统计值。 */
+.metric strong small{font-size:13px;font-weight:400} /* 明确数量与时间单位。 */
+.metric p{font-size:11px;color:var(--muted)} /* 解释指标口径。 */
+.metric.accent{background:#eaf1e1;border-color:#dce6d1} /* 时长指标采用浅绿色强调。 */
+.chart-row{margin:22px 0} /* 状态分布逐行排列。 */
+.chart-row>div:first-child{display:flex;justify-content:space-between;font-size:12px;margin-bottom:10px} /* 状态和数量对应。 */
+.bar-track{height:6px;background:#eff2ec;border-radius:8px;overflow:hidden} /* 状态比例底条。 */
+.bar-fill{height:100%;background:#a9b986;border-radius:8px} /* 用服务计算比例控制长度。 */
+.bar-fill.PENDING{background:#d4a961} /* 待审比例颜色。 */
+.bar-fill.REJECTED{background:#d2947c} /* 拒绝比例颜色。 */
+.bar-fill.CANCELLED{background:#a6b0ad} /* 取消比例颜色。 */
+.rank-row{display:flex;align-items:center;gap:15px;padding:17px 0;border-bottom:1px solid var(--border);font-size:13px} /* 实验室申请数量排行。 */
+.rank-row>strong{margin-left:auto;font-size:12px} /* 数量靠右便于比较。 */
+.rank-number{font-size:12px;color:#a0ac9a} /* 显示排序编号。 */
+
+/* 逻辑分区：登录视觉与移动端适配。 */
+.auth-page{background:#e9eee5} /* 登录页独立背景。 */
+.auth-page .workspace{margin:0} /* 登录前无需侧边栏空间。 */
+.auth-page .content{padding:60px 35px;display:grid;place-items:center;min-height:100vh} /* 登录卡片居中。 */
+.login-layout{display:grid;grid-template-columns:1.1fr 1fr;max-width:1040px;width:100%;border-radius:20px;overflow:hidden;background:white;box-shadow:0 24px 80px #152d321a;min-height:620px} /* 双栏登录面板。 */
+.login-story{padding:55px;background:var(--navy);color:#f4f6ec;position:relative;overflow:hidden} /* 深色说明区。 */
+.login-story .eyebrow{color:#dbe9b3} /* 品牌标识保持可读。 */
+.login-story h1{font-size:40px;margin:22px 0} /* 主要使用目标。 */
+.login-story p{font-size:13px;color:#b7cac1;line-height:2} /* 简要说明系统功能。 */
+.story-visual{position:relative;height:265px;margin:10px -20px 0} /* 本地CSS构成装饰图形。 */
+.visual-grid{position:absolute;inset:20px;background-image:linear-gradient(#b4cfb91a 1px,transparent 1px),linear-gradient(90deg,#b4cfb91a 1px,transparent 1px);background-size:35px 35px;transform:perspective(300px) rotateX(35deg) rotateZ(-10deg)} /* 生成实验规划网格。 */
+.visual-orbit{position:absolute;width:205px;height:205px;border:1px solid #b9d09855;border-radius:50%;left:calc(50% - 103px);top:20px;box-shadow:0 0 0 35px #a5bc8720,0 0 0 70px #a5bc8710} /* 环形装饰无需图片依赖。 */
+.visual-card{position:absolute;inset:95px 12px auto;border:1px solid #89a999;background:#24483e;border-radius:10px;padding:23px;box-shadow:0 15px 40px #0002;transform:rotate(-4deg)} /* 演示预约流程卡片。 */
+.visual-card span,.visual-card small{display:block;font-size:10px;color:#baceba} /* 次级卡片说明。 */
+.visual-card strong{display:block;font-size:20px;margin:5px 0 10px;font-weight:500} /* 强调清晰的业务流程。 */
+.story-footer{position:absolute;bottom:28px;font-size:10px;color:#a4b9ae;letter-spacing:1px} /* 标记课程作品用途。 */
+.login-panel{padding:65px 55px;align-self:center} /* 登录输入区。 */
+.login-panel h2{font-size:25px;margin-bottom:12px} /* 登录主要标题。 */
+.login-panel>.muted{font-size:12px;margin-bottom:30px} /* 登录前说明。 */
+.login-help{font-size:11px;color:var(--muted);text-align:center;margin-top:26px} /* 账号问题的处理方式。 */
+@media(min-width:1450px){.lab-grid{grid-template-columns:repeat(4,minmax(0,1fr))}} /* 超宽屏展示四列资源。 */
+@media(max-width:1200px){.lab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.content{padding:30px}.topbar{padding:0 30px}.lab-facts{flex-wrap:wrap}} /* 中等宽度减少卡片列数。 */
+@media(max-width:850px){.sidebar{position:static;width:auto;padding:18px}.brand{padding:0 0 15px}.nav-caption,.sidebar-note{display:none}nav{display:flex;overflow-x:auto}nav a{flex:0 0 auto;padding:9px 12px}.workspace{margin:0}.topbar{height:70px;padding:0 20px}.content{padding:25px 20px}.detail-grid{grid-template-columns:1fr}.page-heading{align-items:flex-start}.login-layout{grid-template-columns:1fr}.login-story{display:none}.login-panel{padding:45px}.auth-page .content{padding:25px}.login-layout{min-height:0}} /* 手机和窄屏改为顶部导航与单列详情。 */
+@media(max-width:540px){h1{font-size:25px}.lab-grid,.metrics{grid-template-columns:1fr}.count-pill{display:none}.page-heading{flex-wrap:wrap}.login-panel{padding:30px 25px}.identity{gap:8px}.topbar>span{font-size:11px}.avatar{display:none}.info-list{grid-template-columns:75px 1fr}.filter-grid .field{flex-basis:100%}} /* 小屏保持控件与文字可读。 */
+.cancel-confirm{display:flex;align-items:center;gap:8px;font-size:12px;margin:18px 0;color:var(--muted)} /* 页面内确认取消，不依赖浏览器弹窗。 */
