@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="795" viewBox="0 0 1000 795"><!-- 当前图形元素。 -->
+<title>UML状态图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">UML状态图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">预约当前状态与允许转换</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<polyline points="345,95 655,95" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="195,155 195,440" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="805,155 805,440" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="345,130 500,130 500,495 655,495" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<rect x="45" y="45" width="300" height="110" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="195.0" y="95.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">待审核</text><!-- 当前图形元素。 -->
+<text x="195.0" y="125.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">PENDING</text><!-- 当前图形元素。 -->
+<rect x="655" y="45" width="300" height="110" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="805.0" y="95.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">已批准</text><!-- 当前图形元素。 -->
+<text x="805.0" y="125.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">APPROVED</text><!-- 当前图形元素。 -->
+<rect x="45" y="440" width="300" height="110" rx="0" fill="#F1F5FA" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="195.0" y="490.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">已拒绝</text><!-- 当前图形元素。 -->
+<text x="195.0" y="520.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">REJECTED</text><!-- 当前图形元素。 -->
+<rect x="655" y="440" width="300" height="110" rx="0" fill="#F1F5FA" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="805.0" y="490.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">已取消</text><!-- 当前图形元素。 -->
+<text x="805.0" y="520.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">CANCELLED</text><!-- 当前图形元素。 -->
+<text x="500" y="77" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">批准：未来且满足规则</text><!-- 当前图形元素。 -->
+<text x="128" y="293" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">拒绝</text><text x="128" y="321" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">填写理由</text><!-- 当前图形元素。 -->
+<text x="860" y="293" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">取消</text><text x="860" y="321" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">开始前</text><!-- 当前图形元素。 -->
+<text x="565" y="325" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">取消</text><text x="565" y="353" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">开始前</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="763" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">蓝色状态：占用时段；浅色状态：释放时段。取消条件：开始前，由本人或管理员执行。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

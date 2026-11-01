@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1010" viewBox="0 0 1000 1010"><!-- 当前图形元素。 -->
+<title>一级数据流图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">一级数据流图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">三类处理读取或更新同一组资料</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<polyline points="170,105 390,105" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="390,160 170,160" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="830,65 630,65" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="630,120 790,120 790,90 830,90" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="630,185 830,185" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="170,365 390,365" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="390,420 170,420" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="830,325 630,325" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="830,472 630,472" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="630,445 830,445" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="170,625 390,625" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="390,680 170,680" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="830,585 630,585" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="830,732 630,732" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<rect x="10" y="80" width="160" height="95" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="90.0" y="133.62" font-family="Microsoft YaHei" font-size="18" text-anchor="middle" fill="#17365D" font-weight="600">申请人 / 管理员</text><!-- 当前图形元素。 -->
+<rect x="390" y="40" width="240" height="200" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="510.0" y="120.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">1 登录与账号管理</text><!-- 当前图形元素。 -->
+<text x="510.0" y="150.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">认证、退出</text><!-- 当前图形元素。 -->
+<text x="510.0" y="179.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">维护账号与角色</text><!-- 当前图形元素。 -->
+<path d="M990,40 H830 V105 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="80.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D1 用户资料</text><!-- 当前图形元素。 -->
+<path d="M990,165 H830 V230 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="205.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D2 业务资料</text><!-- 当前图形元素。 -->
+<rect x="10" y="340" width="160" height="95" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="90.0" y="393.62" font-family="Microsoft YaHei" font-size="18" text-anchor="middle" fill="#17365D" font-weight="600">申请人 / 管理员</text><!-- 当前图形元素。 -->
+<rect x="390" y="300" width="240" height="200" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="510.0" y="380.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">2 资源与预约处理</text><!-- 当前图形元素。 -->
+<text x="510.0" y="410.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">资源查询与维护</text><!-- 当前图形元素。 -->
+<text x="510.0" y="439.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">申请、审核、取消</text><!-- 当前图形元素。 -->
+<path d="M990,300 H830 V365 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="340.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D1 用户资料</text><!-- 当前图形元素。 -->
+<path d="M990,425 H830 V490 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="465.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D2 业务资料</text><!-- 当前图形元素。 -->
+<rect x="10" y="600" width="160" height="95" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="90.0" y="653.62" font-family="Microsoft YaHei" font-size="18" text-anchor="middle" fill="#17365D" font-weight="600">申请人 / 管理员</text><!-- 当前图形元素。 -->
+<rect x="390" y="560" width="240" height="200" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="510.0" y="640.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">3 统计与操作查询</text><!-- 当前图形元素。 -->
+<text x="510.0" y="670.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">按角色汇总</text><!-- 当前图形元素。 -->
+<text x="510.0" y="699.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">查询关键操作</text><!-- 当前图形元素。 -->
+<path d="M990,560 H830 V625 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="600.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D1 用户资料</text><!-- 当前图形元素。 -->
+<path d="M990,685 H830 V750 H990" fill="none" stroke="#2F75B5" stroke-width="1.8"/><!-- 当前图形元素。 -->
+<text x="910.0" y="725.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">D2 业务资料</text><!-- 当前图形元素。 -->
+<text x="280" y="89" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">登录 / 账号输入</text><!-- 当前图形元素。 -->
+<text x="280" y="192" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">登录 / 维护结果</text><!-- 当前图形元素。 -->
+<text x="730" y="49" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">读取身份</text><!-- 当前图形元素。 -->
+<text x="730" y="146" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">维护账号</text><!-- 当前图形元素。 -->
+<text x="730" y="179" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">保存操作记录</text><!-- 当前图形元素。 -->
+<text x="280" y="349" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">查询 / 业务请求</text><!-- 当前图形元素。 -->
+<text x="280" y="452" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">资源 / 预约结果</text><!-- 当前图形元素。 -->
+<text x="730" y="309" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">读取身份</text><!-- 当前图形元素。 -->
+<text x="730" y="503" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">读取业务资料</text><!-- 当前图形元素。 -->
+<text x="730" y="431" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">保存业务及操作</text><!-- 当前图形元素。 -->
+<text x="280" y="609" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">统计 / 操作条件</text><!-- 当前图形元素。 -->
+<text x="280" y="712" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">统计 / 操作结果</text><!-- 当前图形元素。 -->
+<text x="730" y="569" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">读取身份</text><!-- 当前图形元素。 -->
+<text x="730" y="763" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">读取业务资料</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="978" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">D1：用户资料；D2：资源、预约、审核和操作记录。同名存储在每行重复表示同一份资料。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

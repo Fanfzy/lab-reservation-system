@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="825" viewBox="0 0 1000 825"><!-- 当前图形元素。 -->
+<title>UML类图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">UML类图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">主要类的属性和核心关联</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<polyline points="270,115 380,115" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="680,115 790,115" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="145,220 145,425" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="530,275 530,355 815,355 815,425" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<rect x="15" y="30" width="255" height="190" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="142.5" y="60" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D" font-weight="600">User</text><!-- 当前图形元素。 -->
+<line x1="23" y1="73" x2="262" y2="73" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="27" y="100" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ username: str</text><!-- 当前图形元素。 -->
+<text x="27" y="125" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ is_staff: bool</text><!-- 当前图形元素。 -->
+<text x="27" y="150" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ is_active: bool</text><!-- 当前图形元素。 -->
+<line x1="23" y1="168" x2="262" y2="168" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="27" y="200" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ set_password()</text><!-- 当前图形元素。 -->
+<rect x="380" y="30" width="300" height="245" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="530.0" y="60" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D" font-weight="600">Reservation</text><!-- 当前图形元素。 -->
+<line x1="388" y1="73" x2="672" y2="73" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="392" y="100" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ start_at: datetime</text><!-- 当前图形元素。 -->
+<text x="392" y="125" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ end_at: datetime</text><!-- 当前图形元素。 -->
+<text x="392" y="150" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ status: str</text><!-- 当前图形元素。 -->
+<text x="392" y="175" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ request_key: UUID</text><!-- 当前图形元素。 -->
+<text x="392" y="200.0" font-family="Microsoft YaHei" font-size="20.05813953488372" text-anchor="start" fill="#17365D">+ can_cancel: bool {只读}</text><!-- 当前图形元素。 -->
+<text x="392" y="225" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ time_note: str {只读}</text><!-- 当前图形元素。 -->
+<rect x="790" y="30" width="200" height="245" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="890.0" y="60" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D" font-weight="600">Lab</text><!-- 当前图形元素。 -->
+<line x1="798" y1="73" x2="982" y2="73" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="802" y="100" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ code: str</text><!-- 当前图形元素。 -->
+<text x="802" y="125.0" font-family="Microsoft YaHei" font-size="20.952380952380953" text-anchor="start" fill="#17365D">+ capacity: int</text><!-- 当前图形元素。 -->
+<text x="802" y="150.0" font-family="Microsoft YaHei" font-size="18.48739495798319" text-anchor="start" fill="#17365D">+ open_time: time</text><!-- 当前图形元素。 -->
+<text x="802" y="175.0" font-family="Microsoft YaHei" font-size="17.46031746031746" text-anchor="start" fill="#17365D">+ close_time: time</text><!-- 当前图形元素。 -->
+<line x1="798" y1="193" x2="982" y2="193" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="802" y="225.0" font-family="Microsoft YaHei" font-size="19.642857142857142" text-anchor="start" fill="#17365D">+ __str__(): str</text><!-- 当前图形元素。 -->
+<rect x="15" y="425" width="345" height="180" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="187.5" y="455" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D" font-weight="600">AuditEvent</text><!-- 当前图形元素。 -->
+<line x1="23" y1="468" x2="352" y2="468" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="27" y="495" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ actor: User</text><!-- 当前图形元素。 -->
+<text x="27" y="520" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ action: str</text><!-- 当前图形元素。 -->
+<text x="27" y="545" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ subject: str</text><!-- 当前图形元素。 -->
+<text x="27" y="570" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ detail: str</text><!-- 当前图形元素。 -->
+<text x="27" y="595" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ created_at: datetime</text><!-- 当前图形元素。 -->
+<rect x="640" y="425" width="350" height="180" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="815.0" y="455" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D" font-weight="600">ReviewRecord</text><!-- 当前图形元素。 -->
+<line x1="648" y1="468" x2="982" y2="468" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="652" y="495" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ reservation: Reservation</text><!-- 当前图形元素。 -->
+<text x="652" y="520" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ reviewer: User</text><!-- 当前图形元素。 -->
+<text x="652" y="545" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ approved: bool</text><!-- 当前图形元素。 -->
+<text x="652" y="570" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ reason: str</text><!-- 当前图形元素。 -->
+<text x="652" y="595" font-family="Microsoft YaHei" font-size="21" text-anchor="start" fill="#17365D">+ reviewed_at: datetime</text><!-- 当前图形元素。 -->
+<text x="326" y="96" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">申请人</text><!-- 当前图形元素。 -->
+<text x="288" y="145" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="342" y="145" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="736" y="96" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">资源</text><!-- 当前图形元素。 -->
+<text x="719" y="145" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="774" y="145" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="216" y="330" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">操作者</text><!-- 当前图形元素。 -->
+<text x="162" y="246" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="177" y="411" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="680" y="337" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">对应审核</text><!-- 当前图形元素。 -->
+<text x="550" y="301" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="849" y="411" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..1</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="793" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">+：公开成员；冒号后：值类型；()：方法；{只读}：展示属性。完整字段见数据字典。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

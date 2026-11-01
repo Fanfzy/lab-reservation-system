@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760"><!-- 当前图形元素。 -->
+<title>E-R图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">E-R图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">业务实体与关联数量</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<polyline points="350,65 310,65 310,460 350,460" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="500,125 500,430" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="350,100 270,100 270,302 245,302" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="350,510 290,510 290,360 245,360" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="650,75 760,75" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="650,490 760,490" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<rect x="350" y="25" width="300" height="100" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="70.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">用户 User</text><!-- 当前图形元素。 -->
+<text x="500.0" y="100.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">账号、角色、启用状态</text><!-- 当前图形元素。 -->
+<rect x="760" y="25" width="220" height="130" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="870.0" y="70.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">操作记录</text><!-- 当前图形元素。 -->
+<text x="870.0" y="100.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">操作者、动作</text><!-- 当前图形元素。 -->
+<text x="870.0" y="129.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">对象文字、时间</text><!-- 当前图形元素。 -->
+<rect x="15" y="260" width="230" height="130" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="130.0" y="305.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">审核记录</text><!-- 当前图形元素。 -->
+<text x="130.0" y="335.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">审核人、决定</text><!-- 当前图形元素。 -->
+<text x="130.0" y="364.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">理由、审核时间</text><!-- 当前图形元素。 -->
+<rect x="350" y="430" width="300" height="125" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="473.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">预约 Reservation</text><!-- 当前图形元素。 -->
+<text x="500.0" y="503.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">时段、用途、人数</text><!-- 当前图形元素。 -->
+<text x="500.0" y="532.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">状态、取消人及时间</text><!-- 当前图形元素。 -->
+<rect x="760" y="430" width="220" height="125" rx="0" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="870.0" y="473.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">实验室 Lab</text><!-- 当前图形元素。 -->
+<text x="870.0" y="503.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">编码、容量</text><!-- 当前图形元素。 -->
+<text x="870.0" y="532.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">设备、开放时间</text><!-- 当前图形元素。 -->
+<text x="355" y="225" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">申请人</text><!-- 当前图形元素。 -->
+<text x="328" y="52" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="352" y="412" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="558" y="275" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">取消人</text><!-- 当前图形元素。 -->
+<text x="537" y="154" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..1</text><!-- 当前图形元素。 -->
+<text x="536" y="417" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="211" y="187" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">审核人</text><!-- 当前图形元素。 -->
+<text x="323" y="125" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="218" y="243" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="235" y="455" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">正式审核</text><!-- 当前图形元素。 -->
+<text x="324" y="548" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="213" y="414" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..1</text><!-- 当前图形元素。 -->
+<text x="706" y="54" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">操作者</text><!-- 当前图形元素。 -->
+<text x="666" y="104" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+<text x="723" y="104" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="706" y="473" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">资源</text><!-- 当前图形元素。 -->
+<text x="681" y="519" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">0..*</text><!-- 当前图形元素。 -->
+<text x="742" y="519" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">1</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="728" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">1：恰好一个；0..1：可无或一个；0..*：零个或多个。数量标在对应实体一端。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

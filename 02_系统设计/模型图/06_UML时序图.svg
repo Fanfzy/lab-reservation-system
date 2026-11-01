@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1080" viewBox="0 0 1200 1080"><!-- 当前图形元素。 -->
+<title>UML时序图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">UML时序图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">新申请成功时各对象的协作</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<rect x="720" y="260" width="460" height="525" fill="none" stroke="#2F75B5" stroke-width="1.2" stroke-dasharray="7 5"/><!-- 当前图形元素。 -->
+<text x="1000" y="245" font-family="Microsoft YaHei" font-size="21" text-anchor="middle" fill="#17365D">短写事务</text><!-- 当前图形元素。 -->
+<polyline points="100,70 100,850" fill="none" stroke="#2F75B5" stroke-width="1.7" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="380,70 380,850" fill="none" stroke="#2F75B5" stroke-width="1.7" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="760,70 760,850" fill="none" stroke="#2F75B5" stroke-width="1.7" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="1100,70 1100,850" fill="none" stroke="#2F75B5" stroke-width="1.7" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="100,125 380,125" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="380,220 760,220" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="760,300 1100,300" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="760,370 1100,370" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="1100,440 760,440" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="760,560 1100,560" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="1100,630 760,630" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="760,700 1100,700" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="760,765 1100,765" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="760,805 380,805" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="380,850 100,850" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)" stroke-dasharray="7 6"/><!-- 当前图形元素。 -->
+<polyline points="380,155 425,155 425,185 380,185" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="760,475 805,475 805,510 760,510" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<rect x="20" y="15" width="160" height="55" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="100.0" y="50.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">浏览器</text><!-- 当前图形元素。 -->
+<rect x="300" y="15" width="160" height="55" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="380.0" y="50.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">请求处理</text><!-- 当前图形元素。 -->
+<rect x="680" y="15" width="160" height="55" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="760.0" y="50.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">预约服务</text><!-- 当前图形元素。 -->
+<rect x="1020" y="15" width="160" height="55" rx="0" fill="#D9EAF7" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="1100.0" y="50.66" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">SQLite</text><!-- 当前图形元素。 -->
+<text x="240" y="113" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">提交预约表单</text><!-- 当前图形元素。 -->
+<text x="570" y="208" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">校验后调用提交服务</text><!-- 当前图形元素。 -->
+<text x="930" y="288" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">取得写资格、刷新身份</text><!-- 当前图形元素。 -->
+<text x="930" y="358" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">查询标识与实验室</text><!-- 当前图形元素。 -->
+<text x="930" y="428" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">返回查询结果</text><!-- 当前图形元素。 -->
+<text x="930" y="548" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">查询同资源交叠占用</text><!-- 当前图形元素。 -->
+<text x="930" y="618" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">返回无冲突结果</text><!-- 当前图形元素。 -->
+<text x="930" y="688" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">保存预约及操作记录</text><!-- 当前图形元素。 -->
+<text x="930" y="753" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">提交事务</text><!-- 当前图形元素。 -->
+<text x="570" y="793" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">返回预约结果</text><!-- 当前图形元素。 -->
+<text x="240" y="838" font-family="Microsoft YaHei" font-size="20" text-anchor="middle" fill="#17365D">跳转详情页面</text><!-- 当前图形元素。 -->
+<text x="449" y="176" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">会话、令牌、字段</text><!-- 当前图形元素。 -->
+<text x="828" y="499" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">核对时间与人数</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="1048" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">竖虚线：生命线；实线箭头：调用；虚线箭头：返回。事务内的写入一起生效。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

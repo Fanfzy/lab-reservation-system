@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="825" viewBox="0 0 1000 825"><!-- 当前图形元素。 -->
+<title>UML用例图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">UML用例图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">参与者与使用目标</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<rect x="240" y="15" width="600" height="610" fill="none" stroke="#2F75B5" stroke-width="1.2"/><!-- 当前图形元素。 -->
+<text x="540.0" y="42" font-family="Microsoft YaHei" font-size="21" text-anchor="middle" fill="#17365D">实验室预约管理系统</text><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,95 375,95" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,95 625,95" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,180 375,180" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,180 625,180" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,285 255,285" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,375 255,375" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,465 255,465" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="109,305 180,305 180,555 255,555" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,265 820,265" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,337 820,337" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,409 820,409" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,481 820,481" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<polyline points="891,305 870,305 870,553 820,553" fill="none" stroke="#2F75B5" stroke-width="1.7"/><!-- 当前图形元素。 -->
+<circle cx="80.0" cy="275" r="12" fill="white" stroke="#2F75B5"/><path d="M80.0,287 V330 M51.0,305 H109.0 M80.0,330 L58.0,360 M80.0,330 L102.0,360" fill="none" stroke="#2F75B5" stroke-width="2"/><!-- 当前图形元素。 -->
+<text x="80.0" y="394" font-family="Microsoft YaHei" font-size="25" text-anchor="middle" fill="#17365D">申请人</text><!-- 当前图形元素。 -->
+<circle cx="920.0" cy="275" r="12" fill="white" stroke="#2F75B5"/><path d="M920.0,287 V330 M891.0,305 H949.0 M920.0,330 L898.0,360 M920.0,330 L942.0,360" fill="none" stroke="#2F75B5" stroke-width="2"/><!-- 当前图形元素。 -->
+<text x="920.0" y="394" font-family="Microsoft YaHei" font-size="25" text-anchor="middle" fill="#17365D">管理员</text><!-- 当前图形元素。 -->
+<ellipse cx="500.0" cy="95.0" rx="125.0" ry="28.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="103.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">登录与退出</text><!-- 当前图形元素。 -->
+<ellipse cx="500.0" cy="180.0" rx="125.0" ry="28.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="188.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">查询实验室及占用</text><!-- 当前图形元素。 -->
+<ellipse cx="390.0" cy="285.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="390.0" y="293.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">提交预约申请</text><!-- 当前图形元素。 -->
+<ellipse cx="390.0" cy="375.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="390.0" y="383.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">查看本人预约</text><!-- 当前图形元素。 -->
+<ellipse cx="390.0" cy="465.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="390.0" y="473.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">取消本人预约</text><!-- 当前图形元素。 -->
+<ellipse cx="390.0" cy="555.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="390.0" y="563.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">查看本人统计</text><!-- 当前图形元素。 -->
+<ellipse cx="685.0" cy="265.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="685.0" y="273.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">维护实验室</text><!-- 当前图形元素。 -->
+<ellipse cx="685.0" cy="337.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="685.0" y="345.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">维护账号</text><!-- 当前图形元素。 -->
+<ellipse cx="685.0" cy="409.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="685.0" y="417.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">批准或拒绝预约</text><!-- 当前图形元素。 -->
+<ellipse cx="685.0" cy="481.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="685.0" y="489.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">查看及取消全量预约</text><!-- 当前图形元素。 -->
+<ellipse cx="685.0" cy="553.0" rx="135.0" ry="27.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="685.0" y="561.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">查看统计和操作记录</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="793" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">人形：参与者；椭圆：用户目标；外框：系统边界；实线：参与关系。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

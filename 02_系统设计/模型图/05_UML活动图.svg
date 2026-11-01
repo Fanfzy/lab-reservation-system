@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1165" viewBox="0 0 1000 1165"><!-- 当前图形元素。 -->
+<title>UML活动图</title><!-- 当前图形元素。 -->
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="none" stroke="#2F75B5" stroke-width="1.4"/></marker></defs><!-- 当前图形元素。 -->
+<rect width="100%" height="100%" fill="white"/><!-- 当前图形元素。 -->
+<text x="20" y="31" font-family="Microsoft YaHei" font-size="28" text-anchor="start" fill="#17365D" font-weight="600">UML活动图</text><!-- 当前图形元素。 -->
+<text x="20" y="62" font-family="Microsoft YaHei" font-size="20" text-anchor="start" fill="#17365D">提交预约的检查与保存顺序</text><!-- 当前图形元素。 -->
+<g transform="translate(0,80)"><!-- 当前图形元素。 -->
+<polyline points="500,25 500,55" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,115 500,155" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,235 500,280" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,345 500,395" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,475 500,535" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,605 500,660" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,740 500,805" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="500,880 500,935" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="350,195 265,195" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="140,235 140,270" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="650,435 750,435" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="865,500 865,545" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="350,700 265,700" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<polyline points="140,750 140,800" fill="none" stroke="#2F75B5" stroke-width="1.7" marker-end="url(#arrow)"/><!-- 当前图形元素。 -->
+<circle cx="500.0" cy="15.0" r="8" fill="#17365D"/><!-- 当前图形元素。 -->
+<rect x="350" y="55" width="300" height="60" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="93.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">填写并提交预约</text><!-- 当前图形元素。 -->
+<polygon points="500.0,155 650,195.0 500.0,235 350,195.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="203.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">表单格式有效？</text><!-- 当前图形元素。 -->
+<rect x="350" y="280" width="300" height="65" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="307.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">进入短写事务</text><!-- 当前图形元素。 -->
+<text x="500.0" y="337.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">刷新身份与提交标识</text><!-- 当前图形元素。 -->
+<polygon points="500.0,395 650,435.0 500.0,475 350,435.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="443.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">同一标识已有记录？</text><!-- 当前图形元素。 -->
+<rect x="350" y="535" width="300" height="70" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="565.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">读取资源并检查规则</text><!-- 当前图形元素。 -->
+<text x="500.0" y="595.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">时间、人数、启用状态</text><!-- 当前图形元素。 -->
+<polygon points="500.0,660 650,700.0 500.0,740 350,700.0" fill="#F5F9FD" stroke="#2F75B5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="708.16" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D">规则满足且无冲突？</text><!-- 当前图形元素。 -->
+<rect x="350" y="805" width="300" height="75" rx="12" fill="#F5F9FD" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="500.0" y="837.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">保存待审及操作记录</text><!-- 当前图形元素。 -->
+<text x="500.0" y="867.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">同一事务一起提交</text><!-- 当前图形元素。 -->
+<circle cx="500.0" cy="945.0" r="9" fill="#17365D"/><!-- 当前图形元素。 -->
+<circle cx="500.0" cy="945.0" r="14" fill="none" stroke="#17365D"/><!-- 当前图形元素。 -->
+<rect x="15" y="160" width="250" height="75" rx="12" fill="#F1F5FA" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="140.0" y="192.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">显示输入错误</text><!-- 当前图形元素。 -->
+<text x="140.0" y="222.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">保留已填写内容</text><!-- 当前图形元素。 -->
+<circle cx="140.0" cy="280.0" r="9" fill="#17365D"/><!-- 当前图形元素。 -->
+<circle cx="140.0" cy="280.0" r="14" fill="none" stroke="#17365D"/><!-- 当前图形元素。 -->
+<rect x="750" y="395" width="235" height="105" rx="12" fill="#F1F5FA" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="867.5" y="428.0" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">核对原申请与内容</text><!-- 当前图形元素。 -->
+<text x="867.5" y="458.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">相同：返回原记录</text><!-- 当前图形元素。 -->
+<text x="867.5" y="487.0" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">不同：提示标识已用</text><!-- 当前图形元素。 -->
+<circle cx="865.0" cy="555.0" r="9" fill="#17365D"/><!-- 当前图形元素。 -->
+<circle cx="865.0" cy="555.0" r="14" fill="none" stroke="#17365D"/><!-- 当前图形元素。 -->
+<rect x="15" y="665" width="250" height="85" rx="12" fill="#F1F5FA" stroke="#2F75B5" stroke-width="1.5"/><!-- 当前图形元素。 -->
+<text x="140.0" y="702.5" font-family="Microsoft YaHei" font-size="24" text-anchor="middle" fill="#17365D" font-weight="600">说明业务原因</text><!-- 当前图形元素。 -->
+<text x="140.0" y="732.5" font-family="Microsoft YaHei" font-size="23" text-anchor="middle" fill="#17365D">事务回滚，返回页面</text><!-- 当前图形元素。 -->
+<circle cx="140.0" cy="810.0" r="9" fill="#17365D"/><!-- 当前图形元素。 -->
+<circle cx="140.0" cy="810.0" r="14" fill="none" stroke="#17365D"/><!-- 当前图形元素。 -->
+<text x="307" y="178" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">否</text><!-- 当前图形元素。 -->
+<text x="532" y="266" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">是</text><!-- 当前图形元素。 -->
+<text x="700" y="418" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">是</text><!-- 当前图形元素。 -->
+<text x="533" y="513" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">否</text><!-- 当前图形元素。 -->
+<text x="307" y="683" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">否</text><!-- 当前图形元素。 -->
+<text x="533" y="782" font-family="Microsoft YaHei" font-size="22" text-anchor="middle" fill="#17365D">是</text><!-- 当前图形元素。 -->
+</g><!-- 当前图形元素。 -->
+<text x="20" y="1133" font-family="Microsoft YaHei" font-size="19" text-anchor="start" fill="#17365D">实心圆：开始；靶心：结束；圆角框：动作；菱形：判断；箭头：控制方向。</text><!-- 当前图形元素。 -->
+</svg><!-- 当前图形元素。 -->

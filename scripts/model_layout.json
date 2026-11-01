@@ -1,0 +1,3086 @@
+[
+  {
+    "name": "01_功能结构图",
+    "title": "系统功能结构图",
+    "purpose": "系统分解为八项业务功能",
+    "width": 1000,
+    "height": 570,
+    "nodes": [
+      {
+        "id": "root",
+        "x": 20,
+        "y": 225,
+        "w": 240,
+        "h": 90,
+        "title": "实验室预约",
+        "lines": [
+          "管理系统"
+        ],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "0",
+        "x": 400,
+        "y": 20,
+        "w": 570,
+        "h": 52,
+        "title": "身份与账号：登录、退出、维护账号",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "1",
+        "x": 400,
+        "y": 88,
+        "w": 570,
+        "h": 52,
+        "title": "实验室信息管理：名称、位置、容量与开放时间",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "2",
+        "x": 400,
+        "y": 156,
+        "w": 570,
+        "h": 52,
+        "title": "实验室查询：关键词、容量与按日占用",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "3",
+        "x": 400,
+        "y": 224,
+        "w": 570,
+        "h": 52,
+        "title": "预约申请：时间、人数与冲突检查",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "4",
+        "x": 400,
+        "y": 292,
+        "w": 570,
+        "h": 52,
+        "title": "预约审核：批准、拒绝及理由",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "5",
+        "x": 400,
+        "y": 360,
+        "w": 570,
+        "h": 52,
+        "title": "预约记录与取消：按条件查询、开始前取消",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "6",
+        "x": 400,
+        "y": 428,
+        "w": 570,
+        "h": 52,
+        "title": "基本统计：数量、状态与获批计划时长",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "7",
+        "x": 400,
+        "y": 496,
+        "w": 570,
+        "h": 52,
+        "title": "关键操作记录：提交、审核、取消等业务证据",
+        "lines": [],
+        "kind": "box",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            260,
+            270
+          ],
+          [
+            325,
+            270
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            46
+          ],
+          [
+            325,
+            522
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            46
+          ],
+          [
+            400,
+            46
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            114
+          ],
+          [
+            400,
+            114
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            182
+          ],
+          [
+            400,
+            182
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            250
+          ],
+          [
+            400,
+            250
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            318
+          ],
+          [
+            400,
+            318
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            386
+          ],
+          [
+            400,
+            386
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            454
+          ],
+          [
+            400,
+            454
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            325,
+            522
+          ],
+          [
+            400,
+            522
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      }
+    ],
+    "labels": [],
+    "frames": [],
+    "legend": "矩形：功能模块；无箭头连线：组成关系。"
+  },
+  {
+    "name": "02_UML用例图",
+    "title": "UML用例图",
+    "purpose": "参与者与使用目标",
+    "width": 1000,
+    "height": 665,
+    "nodes": [
+      {
+        "id": "user",
+        "x": 45,
+        "y": 265,
+        "w": 70,
+        "h": 100,
+        "title": "申请人",
+        "lines": [],
+        "kind": "actor",
+        "tone": "light"
+      },
+      {
+        "id": "admin",
+        "x": 885,
+        "y": 265,
+        "w": 70,
+        "h": 100,
+        "title": "管理员",
+        "lines": [],
+        "kind": "actor",
+        "tone": "light"
+      },
+      {
+        "id": "common95",
+        "x": 375,
+        "y": 67,
+        "w": 250,
+        "h": 56,
+        "title": "登录与退出",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "common180",
+        "x": 375,
+        "y": 152,
+        "w": 250,
+        "h": 56,
+        "title": "查询实验室及占用",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "user0",
+        "x": 255,
+        "y": 258,
+        "w": 270,
+        "h": 54,
+        "title": "提交预约申请",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "user1",
+        "x": 255,
+        "y": 348,
+        "w": 270,
+        "h": 54,
+        "title": "查看本人预约",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "user2",
+        "x": 255,
+        "y": 438,
+        "w": 270,
+        "h": 54,
+        "title": "取消本人预约",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "user3",
+        "x": 255,
+        "y": 528,
+        "w": 270,
+        "h": 54,
+        "title": "查看本人统计",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "admin0",
+        "x": 550,
+        "y": 238,
+        "w": 270,
+        "h": 54,
+        "title": "维护实验室",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "admin1",
+        "x": 550,
+        "y": 310,
+        "w": 270,
+        "h": 54,
+        "title": "维护账号",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "admin2",
+        "x": 550,
+        "y": 382,
+        "w": 270,
+        "h": 54,
+        "title": "批准或拒绝预约",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "admin3",
+        "x": 550,
+        "y": 454,
+        "w": 270,
+        "h": 54,
+        "title": "查看及取消全量预约",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      },
+      {
+        "id": "admin4",
+        "x": 550,
+        "y": 526,
+        "w": 270,
+        "h": 54,
+        "title": "查看统计和操作记录",
+        "lines": [],
+        "kind": "ellipse",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            95
+          ],
+          [
+            375,
+            95
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            95
+          ],
+          [
+            625,
+            95
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            180
+          ],
+          [
+            375,
+            180
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            180
+          ],
+          [
+            625,
+            180
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            285
+          ],
+          [
+            255,
+            285
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            375
+          ],
+          [
+            255,
+            375
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            465
+          ],
+          [
+            255,
+            465
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            109,
+            305
+          ],
+          [
+            180,
+            305
+          ],
+          [
+            180,
+            555
+          ],
+          [
+            255,
+            555
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            265
+          ],
+          [
+            820,
+            265
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            337
+          ],
+          [
+            820,
+            337
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            409
+          ],
+          [
+            820,
+            409
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            481
+          ],
+          [
+            820,
+            481
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            891,
+            305
+          ],
+          [
+            870,
+            305
+          ],
+          [
+            870,
+            553
+          ],
+          [
+            820,
+            553
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      }
+    ],
+    "labels": [],
+    "frames": [
+      {
+        "x": 240,
+        "y": 15,
+        "w": 600,
+        "h": 610,
+        "title": "实验室预约管理系统"
+      }
+    ],
+    "legend": "人形：参与者；椭圆：用户目标；外框：系统边界；实线：参与关系。"
+  },
+  {
+    "name": "03_ER图",
+    "title": "E-R图",
+    "purpose": "业务实体与关联数量",
+    "width": 1000,
+    "height": 600,
+    "nodes": [
+      {
+        "id": "user",
+        "x": 350,
+        "y": 25,
+        "w": 300,
+        "h": 100,
+        "title": "用户 User",
+        "lines": [
+          "账号、角色、启用状态"
+        ],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "audit",
+        "x": 760,
+        "y": 25,
+        "w": 220,
+        "h": 130,
+        "title": "操作记录",
+        "lines": [
+          "操作者、动作",
+          "对象文字、时间"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "review",
+        "x": 15,
+        "y": 260,
+        "w": 230,
+        "h": 130,
+        "title": "审核记录",
+        "lines": [
+          "审核人、决定",
+          "理由、审核时间"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "booking",
+        "x": 350,
+        "y": 430,
+        "w": 300,
+        "h": 125,
+        "title": "预约 Reservation",
+        "lines": [
+          "时段、用途、人数",
+          "状态、取消人及时间"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "lab",
+        "x": 760,
+        "y": 430,
+        "w": 220,
+        "h": 125,
+        "title": "实验室 Lab",
+        "lines": [
+          "编码、容量",
+          "设备、开放时间"
+        ],
+        "kind": "box",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            350,
+            65
+          ],
+          [
+            310,
+            65
+          ],
+          [
+            310,
+            460
+          ],
+          [
+            350,
+            460
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            125
+          ],
+          [
+            500,
+            430
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            350,
+            100
+          ],
+          [
+            270,
+            100
+          ],
+          [
+            270,
+            302
+          ],
+          [
+            245,
+            302
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            350,
+            510
+          ],
+          [
+            290,
+            510
+          ],
+          [
+            290,
+            360
+          ],
+          [
+            245,
+            360
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            650,
+            75
+          ],
+          [
+            760,
+            75
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            650,
+            490
+          ],
+          [
+            760,
+            490
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 355,
+        "y": 225,
+        "text": "申请人",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 328,
+        "y": 52,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 352,
+        "y": 412,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 558,
+        "y": 275,
+        "text": "取消人",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 537,
+        "y": 154,
+        "text": "0..1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 536,
+        "y": 417,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 211,
+        "y": 187,
+        "text": "审核人",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 323,
+        "y": 125,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 218,
+        "y": 243,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 235,
+        "y": 455,
+        "text": "正式审核",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 324,
+        "y": 548,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 213,
+        "y": 414,
+        "text": "0..1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 706,
+        "y": 54,
+        "text": "操作者",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 666,
+        "y": 104,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 723,
+        "y": 104,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 706,
+        "y": 473,
+        "text": "资源",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 681,
+        "y": 519,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 742,
+        "y": 519,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "1：恰好一个；0..1：可无或一个；0..*：零个或多个。数量标在对应实体一端。"
+  },
+  {
+    "name": "04_UML类图",
+    "title": "UML类图",
+    "purpose": "主要类的属性和核心关联",
+    "width": 1000,
+    "height": 665,
+    "nodes": [
+      {
+        "id": "user",
+        "x": 15,
+        "y": 30,
+        "w": 255,
+        "h": 190,
+        "title": "User",
+        "lines": [
+          "+ username: str",
+          "+ is_staff: bool",
+          "+ is_active: bool",
+          "---",
+          "+ set_password()"
+        ],
+        "kind": "class",
+        "tone": "primary"
+      },
+      {
+        "id": "booking",
+        "x": 380,
+        "y": 30,
+        "w": 300,
+        "h": 245,
+        "title": "Reservation",
+        "lines": [
+          "+ start_at: datetime",
+          "+ end_at: datetime",
+          "+ status: str",
+          "+ request_key: UUID",
+          "+ can_cancel: bool {只读}",
+          "+ time_note: str {只读}"
+        ],
+        "kind": "class",
+        "tone": "light"
+      },
+      {
+        "id": "lab",
+        "x": 790,
+        "y": 30,
+        "w": 200,
+        "h": 245,
+        "title": "Lab",
+        "lines": [
+          "+ code: str",
+          "+ capacity: int",
+          "+ open_time: time",
+          "+ close_time: time",
+          "---",
+          "+ __str__(): str"
+        ],
+        "kind": "class",
+        "tone": "light"
+      },
+      {
+        "id": "audit",
+        "x": 15,
+        "y": 425,
+        "w": 345,
+        "h": 180,
+        "title": "AuditEvent",
+        "lines": [
+          "+ actor: User",
+          "+ action: str",
+          "+ subject: str",
+          "+ detail: str",
+          "+ created_at: datetime"
+        ],
+        "kind": "class",
+        "tone": "light"
+      },
+      {
+        "id": "review",
+        "x": 640,
+        "y": 425,
+        "w": 350,
+        "h": 180,
+        "title": "ReviewRecord",
+        "lines": [
+          "+ reservation: Reservation",
+          "+ reviewer: User",
+          "+ approved: bool",
+          "+ reason: str",
+          "+ reviewed_at: datetime"
+        ],
+        "kind": "class",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            270,
+            115
+          ],
+          [
+            380,
+            115
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            680,
+            115
+          ],
+          [
+            790,
+            115
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            145,
+            220
+          ],
+          [
+            145,
+            425
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            530,
+            275
+          ],
+          [
+            530,
+            355
+          ],
+          [
+            815,
+            355
+          ],
+          [
+            815,
+            425
+          ]
+        ],
+        "arrow": false,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 326,
+        "y": 96,
+        "text": "申请人",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 288,
+        "y": 145,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 342,
+        "y": 145,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 736,
+        "y": 96,
+        "text": "资源",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 719,
+        "y": 145,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 774,
+        "y": 145,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 216,
+        "y": 330,
+        "text": "操作者",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 162,
+        "y": 246,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 177,
+        "y": 411,
+        "text": "0..*",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 680,
+        "y": 337,
+        "text": "对应审核",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 550,
+        "y": 301,
+        "text": "1",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 849,
+        "y": 411,
+        "text": "0..1",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "+：公开成员；冒号后：值类型；()：方法；{只读}：展示属性。完整字段见数据字典。"
+  },
+  {
+    "name": "05_UML活动图",
+    "title": "UML活动图",
+    "purpose": "提交预约的检查与保存顺序",
+    "width": 1000,
+    "height": 1005,
+    "nodes": [
+      {
+        "id": "start",
+        "x": 490,
+        "y": 5,
+        "w": 20,
+        "h": 20,
+        "title": "",
+        "lines": [],
+        "kind": "start",
+        "tone": "light"
+      },
+      {
+        "id": "input",
+        "x": 350,
+        "y": 55,
+        "w": 300,
+        "h": 60,
+        "title": "填写并提交预约",
+        "lines": [],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "format",
+        "x": 350,
+        "y": 155,
+        "w": 300,
+        "h": 80,
+        "title": "表单格式有效？",
+        "lines": [],
+        "kind": "diamond",
+        "tone": "light"
+      },
+      {
+        "id": "txn",
+        "x": 350,
+        "y": 280,
+        "w": 300,
+        "h": 65,
+        "title": "进入短写事务",
+        "lines": [
+          "刷新身份与提交标识"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "key",
+        "x": 350,
+        "y": 395,
+        "w": 300,
+        "h": 80,
+        "title": "同一标识已有记录？",
+        "lines": [],
+        "kind": "diamond",
+        "tone": "light"
+      },
+      {
+        "id": "resource",
+        "x": 350,
+        "y": 535,
+        "w": 300,
+        "h": 70,
+        "title": "读取资源并检查规则",
+        "lines": [
+          "时间、人数、启用状态"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "conflict",
+        "x": 350,
+        "y": 660,
+        "w": 300,
+        "h": 80,
+        "title": "规则满足且无冲突？",
+        "lines": [],
+        "kind": "diamond",
+        "tone": "light"
+      },
+      {
+        "id": "save",
+        "x": 350,
+        "y": 805,
+        "w": 300,
+        "h": 75,
+        "title": "保存待审及操作记录",
+        "lines": [
+          "同一事务一起提交"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "end",
+        "x": 490,
+        "y": 935,
+        "w": 20,
+        "h": 20,
+        "title": "",
+        "lines": [],
+        "kind": "end",
+        "tone": "light"
+      },
+      {
+        "id": "invalid",
+        "x": 15,
+        "y": 160,
+        "w": 250,
+        "h": 75,
+        "title": "显示输入错误",
+        "lines": [
+          "保留已填写内容"
+        ],
+        "kind": "action",
+        "tone": "muted"
+      },
+      {
+        "id": "invalidEnd",
+        "x": 130,
+        "y": 270,
+        "w": 20,
+        "h": 20,
+        "title": "",
+        "lines": [],
+        "kind": "end",
+        "tone": "light"
+      },
+      {
+        "id": "replay",
+        "x": 750,
+        "y": 395,
+        "w": 235,
+        "h": 105,
+        "title": "核对原申请与内容",
+        "lines": [
+          "相同：返回原记录",
+          "不同：提示标识已用"
+        ],
+        "kind": "action",
+        "tone": "muted"
+      },
+      {
+        "id": "replayEnd",
+        "x": 855,
+        "y": 545,
+        "w": 20,
+        "h": 20,
+        "title": "",
+        "lines": [],
+        "kind": "end",
+        "tone": "light"
+      },
+      {
+        "id": "reject",
+        "x": 15,
+        "y": 665,
+        "w": 250,
+        "h": 85,
+        "title": "说明业务原因",
+        "lines": [
+          "事务回滚，返回页面"
+        ],
+        "kind": "action",
+        "tone": "muted"
+      },
+      {
+        "id": "rejectEnd",
+        "x": 130,
+        "y": 800,
+        "w": 20,
+        "h": 20,
+        "title": "",
+        "lines": [],
+        "kind": "end",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            500,
+            25
+          ],
+          [
+            500,
+            55
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            115
+          ],
+          [
+            500,
+            155
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            235
+          ],
+          [
+            500,
+            280
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            345
+          ],
+          [
+            500,
+            395
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            475
+          ],
+          [
+            500,
+            535
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            605
+          ],
+          [
+            500,
+            660
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            740
+          ],
+          [
+            500,
+            805
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            880
+          ],
+          [
+            500,
+            935
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            350,
+            195
+          ],
+          [
+            265,
+            195
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            140,
+            235
+          ],
+          [
+            140,
+            270
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            650,
+            435
+          ],
+          [
+            750,
+            435
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            865,
+            500
+          ],
+          [
+            865,
+            545
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            350,
+            700
+          ],
+          [
+            265,
+            700
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            140,
+            750
+          ],
+          [
+            140,
+            800
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 307,
+        "y": 178,
+        "text": "否",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 532,
+        "y": 266,
+        "text": "是",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 700,
+        "y": 418,
+        "text": "是",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 533,
+        "y": 513,
+        "text": "否",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 307,
+        "y": 683,
+        "text": "否",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 533,
+        "y": 782,
+        "text": "是",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "实心圆：开始；靶心：结束；圆角框：动作；菱形：判断；箭头：控制方向。"
+  },
+  {
+    "name": "06_UML时序图",
+    "title": "UML时序图",
+    "purpose": "新申请成功时各对象的协作",
+    "width": 1200,
+    "height": 920,
+    "nodes": [
+      {
+        "id": "浏览器",
+        "x": 20,
+        "y": 15,
+        "w": 160,
+        "h": 55,
+        "title": "浏览器",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "请求处理",
+        "x": 300,
+        "y": 15,
+        "w": 160,
+        "h": 55,
+        "title": "请求处理",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "预约服务",
+        "x": 680,
+        "y": 15,
+        "w": 160,
+        "h": 55,
+        "title": "预约服务",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "SQLite",
+        "x": 1020,
+        "y": 15,
+        "w": 160,
+        "h": 55,
+        "title": "SQLite",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            100,
+            70
+          ],
+          [
+            100,
+            850
+          ]
+        ],
+        "arrow": false,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            380,
+            70
+          ],
+          [
+            380,
+            850
+          ]
+        ],
+        "arrow": false,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            760,
+            70
+          ],
+          [
+            760,
+            850
+          ]
+        ],
+        "arrow": false,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            1100,
+            70
+          ],
+          [
+            1100,
+            850
+          ]
+        ],
+        "arrow": false,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            100,
+            125
+          ],
+          [
+            380,
+            125
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            380,
+            220
+          ],
+          [
+            760,
+            220
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            760,
+            300
+          ],
+          [
+            1100,
+            300
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            760,
+            370
+          ],
+          [
+            1100,
+            370
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            1100,
+            440
+          ],
+          [
+            760,
+            440
+          ]
+        ],
+        "arrow": true,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            760,
+            560
+          ],
+          [
+            1100,
+            560
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            1100,
+            630
+          ],
+          [
+            760,
+            630
+          ]
+        ],
+        "arrow": true,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            760,
+            700
+          ],
+          [
+            1100,
+            700
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            760,
+            765
+          ],
+          [
+            1100,
+            765
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            760,
+            805
+          ],
+          [
+            380,
+            805
+          ]
+        ],
+        "arrow": true,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            380,
+            850
+          ],
+          [
+            100,
+            850
+          ]
+        ],
+        "arrow": true,
+        "dashed": true
+      },
+      {
+        "points": [
+          [
+            380,
+            155
+          ],
+          [
+            425,
+            155
+          ],
+          [
+            425,
+            185
+          ],
+          [
+            380,
+            185
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            760,
+            475
+          ],
+          [
+            805,
+            475
+          ],
+          [
+            805,
+            510
+          ],
+          [
+            760,
+            510
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 240,
+        "y": 113,
+        "text": "提交预约表单",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 570,
+        "y": 208,
+        "text": "校验后调用提交服务",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 288,
+        "text": "取得写资格、刷新身份",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 358,
+        "text": "查询标识与实验室",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 428,
+        "text": "返回查询结果",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 548,
+        "text": "查询同资源交叠占用",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 618,
+        "text": "返回无冲突结果",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 688,
+        "text": "保存预约及操作记录",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 930,
+        "y": 753,
+        "text": "提交事务",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 570,
+        "y": 793,
+        "text": "返回预约结果",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 240,
+        "y": 838,
+        "text": "跳转详情页面",
+        "size": 20,
+        "anchor": "middle"
+      },
+      {
+        "x": 449,
+        "y": 176,
+        "text": "会话、令牌、字段",
+        "size": 20,
+        "anchor": "start"
+      },
+      {
+        "x": 828,
+        "y": 499,
+        "text": "核对时间与人数",
+        "size": 20,
+        "anchor": "start"
+      }
+    ],
+    "frames": [
+      {
+        "x": 720,
+        "y": 260,
+        "w": 460,
+        "h": 525,
+        "title": "短写事务",
+        "dashed": true,
+        "labelX": 1000,
+        "labelY": 245
+      }
+    ],
+    "legend": "竖虚线：生命线；实线箭头：调用；虚线箭头：返回。事务内的写入一起生效。"
+  },
+  {
+    "name": "07_UML状态图",
+    "title": "UML状态图",
+    "purpose": "预约当前状态与允许转换",
+    "width": 1000,
+    "height": 635,
+    "nodes": [
+      {
+        "id": "pending",
+        "x": 45,
+        "y": 45,
+        "w": 300,
+        "h": 110,
+        "title": "待审核",
+        "lines": [
+          "PENDING"
+        ],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "approved",
+        "x": 655,
+        "y": 45,
+        "w": 300,
+        "h": 110,
+        "title": "已批准",
+        "lines": [
+          "APPROVED"
+        ],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "rejected",
+        "x": 45,
+        "y": 440,
+        "w": 300,
+        "h": 110,
+        "title": "已拒绝",
+        "lines": [
+          "REJECTED"
+        ],
+        "kind": "box",
+        "tone": "muted"
+      },
+      {
+        "id": "cancelled",
+        "x": 655,
+        "y": 440,
+        "w": 300,
+        "h": 110,
+        "title": "已取消",
+        "lines": [
+          "CANCELLED"
+        ],
+        "kind": "box",
+        "tone": "muted"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            345,
+            95
+          ],
+          [
+            655,
+            95
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            195,
+            155
+          ],
+          [
+            195,
+            440
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            805,
+            155
+          ],
+          [
+            805,
+            440
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            345,
+            130
+          ],
+          [
+            500,
+            130
+          ],
+          [
+            500,
+            495
+          ],
+          [
+            655,
+            495
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 500,
+        "y": 77,
+        "text": "批准：未来且满足规则",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 128,
+        "y": 293,
+        "text": "拒绝\n填写理由",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 860,
+        "y": 293,
+        "text": "取消\n开始前",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 565,
+        "y": 325,
+        "text": "取消\n开始前",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "蓝色状态：占用时段；浅色状态：释放时段。取消条件：开始前，由本人或管理员执行。"
+  },
+  {
+    "name": "08_分层结构图",
+    "title": "分层结构图",
+    "purpose": "界面、请求、业务与数据的职责",
+    "width": 1000,
+    "height": 700,
+    "nodes": [
+      {
+        "id": "0",
+        "x": 70,
+        "y": 15,
+        "w": 860,
+        "h": 85,
+        "title": "浏览器界面",
+        "lines": [
+          "HTML表单与列表，CSS布局，JavaScript即时提示"
+        ],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "1",
+        "x": 70,
+        "y": 150,
+        "w": 860,
+        "h": 85,
+        "title": "请求处理层",
+        "lines": [
+          "urls路由、views视图、forms表单、登录会话"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "2",
+        "x": 70,
+        "y": 285,
+        "w": 860,
+        "h": 85,
+        "title": "业务服务层",
+        "lines": [
+          "reservations预约，labs资源，accounts账号，reports统计"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "3",
+        "x": 70,
+        "y": 420,
+        "w": 860,
+        "h": 85,
+        "title": "数据模型层",
+        "lines": [
+          "User、Lab、Reservation、ReviewRecord、AuditEvent"
+        ],
+        "kind": "box",
+        "tone": "light"
+      },
+      {
+        "id": "4",
+        "x": 70,
+        "y": 555,
+        "w": 860,
+        "h": 85,
+        "title": "SQLite文件",
+        "lines": [
+          "runtime/db.sqlite3：保存账号及业务记录"
+        ],
+        "kind": "box",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            500,
+            100
+          ],
+          [
+            500,
+            150
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            235
+          ],
+          [
+            500,
+            285
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            370
+          ],
+          [
+            500,
+            420
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            500,
+            505
+          ],
+          [
+            500,
+            555
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 594,
+        "y": 129,
+        "text": "发送请求",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 594,
+        "y": 264,
+        "text": "调用业务接口",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 594,
+        "y": 399,
+        "text": "执行查询和保存",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 594,
+        "y": 534,
+        "text": "持久化读写",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "框：程序职责；箭头：调用方向。每层通过清晰接口与相邻层协作。"
+  },
+  {
+    "name": "09_顶层数据流图",
+    "title": "顶层数据流图",
+    "purpose": "角色向系统提供的数据与获得的结果",
+    "width": 1000,
+    "height": 610,
+    "nodes": [
+      {
+        "id": "user",
+        "x": 15,
+        "y": 235,
+        "w": 200,
+        "h": 100,
+        "title": "申请人",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "process",
+        "x": 350,
+        "y": 205,
+        "w": 300,
+        "h": 170,
+        "title": "0 实验室预约管理",
+        "lines": [
+          "查询、申请、审核",
+          "维护、取消、统计"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "admin",
+        "x": 785,
+        "y": 235,
+        "w": 200,
+        "h": 100,
+        "title": "管理员",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            215,
+            260
+          ],
+          [
+            275,
+            260
+          ],
+          [
+            275,
+            145
+          ],
+          [
+            430,
+            145
+          ],
+          [
+            430,
+            205
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            430,
+            375
+          ],
+          [
+            430,
+            460
+          ],
+          [
+            275,
+            460
+          ],
+          [
+            275,
+            310
+          ],
+          [
+            215,
+            310
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            785,
+            260
+          ],
+          [
+            725,
+            260
+          ],
+          [
+            725,
+            145
+          ],
+          [
+            570,
+            145
+          ],
+          [
+            570,
+            205
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            570,
+            375
+          ],
+          [
+            570,
+            460
+          ],
+          [
+            725,
+            460
+          ],
+          [
+            725,
+            310
+          ],
+          [
+            785,
+            310
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 360,
+        "y": 126,
+        "text": "F1 申请人输入",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 360,
+        "y": 492,
+        "text": "F2 申请人结果",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 650,
+        "y": 126,
+        "text": "F3 管理员输入",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 650,
+        "y": 492,
+        "text": "F4 管理员结果",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "矩形：外部实体；圆角框：加工；箭头：数据流。F1—F4分别代表输入或输出的数据集合。"
+  },
+  {
+    "name": "10_一级数据流图",
+    "title": "一级数据流图",
+    "purpose": "三类处理读取或更新同一组资料",
+    "width": 1000,
+    "height": 850,
+    "nodes": [
+      {
+        "id": "actor0",
+        "x": 10,
+        "y": 80,
+        "w": 160,
+        "h": 95,
+        "title": "申请人 / 管理员",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "p0",
+        "x": 390,
+        "y": 40,
+        "w": 240,
+        "h": 200,
+        "title": "1 登录与账号管理",
+        "lines": [
+          "认证、退出",
+          "维护账号与角色"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "d10",
+        "x": 830,
+        "y": 40,
+        "w": 160,
+        "h": 65,
+        "title": "D1 用户资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      },
+      {
+        "id": "d20",
+        "x": 830,
+        "y": 165,
+        "w": 160,
+        "h": 65,
+        "title": "D2 业务资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      },
+      {
+        "id": "actor1",
+        "x": 10,
+        "y": 340,
+        "w": 160,
+        "h": 95,
+        "title": "申请人 / 管理员",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "p1",
+        "x": 390,
+        "y": 300,
+        "w": 240,
+        "h": 200,
+        "title": "2 资源与预约处理",
+        "lines": [
+          "资源查询与维护",
+          "申请、审核、取消"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "d11",
+        "x": 830,
+        "y": 300,
+        "w": 160,
+        "h": 65,
+        "title": "D1 用户资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      },
+      {
+        "id": "d21",
+        "x": 830,
+        "y": 425,
+        "w": 160,
+        "h": 65,
+        "title": "D2 业务资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      },
+      {
+        "id": "actor2",
+        "x": 10,
+        "y": 600,
+        "w": 160,
+        "h": 95,
+        "title": "申请人 / 管理员",
+        "lines": [],
+        "kind": "box",
+        "tone": "primary"
+      },
+      {
+        "id": "p2",
+        "x": 390,
+        "y": 560,
+        "w": 240,
+        "h": 200,
+        "title": "3 统计与操作查询",
+        "lines": [
+          "按角色汇总",
+          "查询关键操作"
+        ],
+        "kind": "action",
+        "tone": "light"
+      },
+      {
+        "id": "d12",
+        "x": 830,
+        "y": 560,
+        "w": 160,
+        "h": 65,
+        "title": "D1 用户资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      },
+      {
+        "id": "d22",
+        "x": 830,
+        "y": 685,
+        "w": 160,
+        "h": 65,
+        "title": "D2 业务资料",
+        "lines": [],
+        "kind": "store",
+        "tone": "light"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            170,
+            105
+          ],
+          [
+            390,
+            105
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            390,
+            160
+          ],
+          [
+            170,
+            160
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            830,
+            65
+          ],
+          [
+            630,
+            65
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            630,
+            120
+          ],
+          [
+            790,
+            120
+          ],
+          [
+            790,
+            90
+          ],
+          [
+            830,
+            90
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            630,
+            185
+          ],
+          [
+            830,
+            185
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            170,
+            365
+          ],
+          [
+            390,
+            365
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            390,
+            420
+          ],
+          [
+            170,
+            420
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            830,
+            325
+          ],
+          [
+            630,
+            325
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            830,
+            472
+          ],
+          [
+            630,
+            472
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            630,
+            445
+          ],
+          [
+            830,
+            445
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            170,
+            625
+          ],
+          [
+            390,
+            625
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            390,
+            680
+          ],
+          [
+            170,
+            680
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            830,
+            585
+          ],
+          [
+            630,
+            585
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            830,
+            732
+          ],
+          [
+            630,
+            732
+          ]
+        ],
+        "arrow": true,
+        "dashed": false
+      }
+    ],
+    "labels": [
+      {
+        "x": 280,
+        "y": 89,
+        "text": "登录 / 账号输入",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 280,
+        "y": 192,
+        "text": "登录 / 维护结果",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 49,
+        "text": "读取身份",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 146,
+        "text": "维护账号",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 179,
+        "text": "保存操作记录",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 280,
+        "y": 349,
+        "text": "查询 / 业务请求",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 280,
+        "y": 452,
+        "text": "资源 / 预约结果",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 309,
+        "text": "读取身份",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 503,
+        "text": "读取业务资料",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 431,
+        "text": "保存业务及操作",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 280,
+        "y": 609,
+        "text": "统计 / 操作条件",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 280,
+        "y": 712,
+        "text": "统计 / 操作结果",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 569,
+        "text": "读取身份",
+        "size": 22,
+        "anchor": "middle"
+      },
+      {
+        "x": 730,
+        "y": 763,
+        "text": "读取业务资料",
+        "size": 22,
+        "anchor": "middle"
+      }
+    ],
+    "frames": [],
+    "legend": "D1：用户资料；D2：资源、预约、审核和操作记录。同名存储在每行重复表示同一份资料。"
+  }
+]
