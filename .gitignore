@@ -1,0 +1,26 @@
+# 本机业务数据、日志和缓存。
+runtime/
+__pycache__/
+*.py[cod]
+*.log
+# 私人运行配置。
+.env
+.env.*
+local_settings.py
+# 备份、临时验证和本地发布输出。
+archive/
+backups/
+releases/
+.verification/
+*.bak
+*.tmp
+# SQLite运行时旁路文件，保留database/demo.sqlite3演示快照。
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+# 本机编辑器与系统生成文件。
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
